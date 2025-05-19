@@ -9,7 +9,7 @@ services:
     volumes:
       - redis:/data
     logging: &logging
-      driver: journald
+      driver: json-file
       options:
         tag: '{{.Name}}'
 
